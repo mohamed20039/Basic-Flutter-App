@@ -14,9 +14,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.yellow,
         title: Center(child: Text("My App")),
       ),
-      body: Column(
+      body: Flex(
+          direction: Axis.vertical,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               child: Text("green"),
