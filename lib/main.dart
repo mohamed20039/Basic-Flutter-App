@@ -18,13 +18,14 @@ class Home extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ListTile(
-            onTap: () => {print("Hello World")},
-            leading: Icon(Icons.image),
-            title: Text("Mohamed Mohamud"),
-            subtitle: Text("Full Stack Developer"),
-            trailing: Icon(Icons.call),
-          )
+          SelectableText("Hello world")
+          // ListTile(
+          //   onTap: () => {print("Hello World")},
+          //   leading: Icon(Icons.image),
+          //   title: Text("Mohamed Mohamud"),
+          //   subtitle: SelectableText("Full Stack Developer"),
+          //   trailing: Icon(Icons.call),
+          // )
         ],
       )),
     );
