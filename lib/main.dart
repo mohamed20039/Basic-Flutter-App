@@ -14,35 +14,18 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.yellow,
         title: Center(child: Text("My App")),
       ),
-      body: Flex(
-          direction: Axis.vertical,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Container(
-              child: Text("green"),
-              alignment: Alignment.center,
-              color: Colors.green,
-              width: 100,
-              padding: EdgeInsets.all(12.0),
-              height: 100,
-            ),
-            Container(
-              child: Text("cyan"),
-              alignment: Alignment.center,
-              color: Colors.cyan,
-              width: 100,
-              padding: EdgeInsets.all(12.0),
-              height: 100,
-            ),
-            Container(
-              child: Text("red"),
-              alignment: Alignment.center,
-              color: Colors.red,
-              width: 100,
-              padding: EdgeInsets.all(12.0),
-              height: 100,
-            )
-          ]),
+      body: Center(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Wrap(
+            children: [
+              Text(
+                  "Hello world! Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!")
+            ],
+          )
+        ],
+      )),
     );
   }
 }
