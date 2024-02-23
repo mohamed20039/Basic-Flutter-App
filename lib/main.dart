@@ -14,16 +14,34 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.yellow,
         title: Center(child: Text("My App")),
       ),
-      body: Row(
+      body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () => {}, child: Text("Hi")),
-            ElevatedButton.icon(
-                onPressed: () => {},
-                icon: Icon(Icons.abc),
-                label: Text("ADD PHOTO")),
-            Text("This is row widget")
+            Container(
+              child: Text("green"),
+              alignment: Alignment.center,
+              color: Colors.green,
+              width: 100,
+              padding: EdgeInsets.all(12.0),
+              height: 100,
+            ),
+            Container(
+              child: Text("cyan"),
+              alignment: Alignment.center,
+              color: Colors.cyan,
+              width: 100,
+              padding: EdgeInsets.all(12.0),
+              height: 100,
+            ),
+            Container(
+              child: Text("red"),
+              alignment: Alignment.center,
+              color: Colors.red,
+              width: 100,
+              padding: EdgeInsets.all(12.0),
+              height: 100,
+            )
           ]),
     );
   }
